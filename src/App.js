@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import MainSection from "./components/MainSection";
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
+import Toggler from "./components/Toggler";
+
+import { TaskProvider } from "./context/task.context";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <TaskProvider>
+        <Navbar />
+        <div className="secLayer">
+          <Sidebar />
+          <div style={{ overflow: "hidden" }}>
+            <Toggler />
+            <MainSection />
+          </div>
+
+        </div>
+      </TaskProvider>
+
+
+    </>
   );
-}
+};
 
 export default App;

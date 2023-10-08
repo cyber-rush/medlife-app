@@ -1,0 +1,31 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" fill="#F5F5F5"/>
+<g id="Completed Tasks" clip-path="url(#clip0_234_95)">
+<rect width="1920" height="948" transform="translate(-255 -171)" fill="#F4F4F4"/>
+<g id="Group 132853">
+<g id="Rectangle 28374">
+<mask id="path-1-inside-1_234_95" fill="white">
+<path d="M-254 -90H54V777H-254V-90Z"/>
+</mask>
+<path d="M-254 -90H54V777H-254V-90Z" fill="white"/>
+<path d="M53 -90V777H55V-90H53Z" fill="#E8E8E8" mask="url(#path-1-inside-1_234_95)"/>
+</g>
+<g id="Group 132853_2">
+<g id="Group 13248">
+<path id="Area [DISPLAY_ELEMENTS:Label][SIZE:MEDIUM][STATE:DEFAULT][STYLE:STYLE1]" d="M28.8889 -10H-228.889C-235.025 -10 -240 -5.62234 -240 -0.222222V24.2222C-240 29.6223 -235.025 34 -228.889 34H28.8889C35.0254 34 40 29.6223 40 24.2222V-0.222222C40 -5.62234 35.0254 -10 28.8889 -10Z" fill="#04095A"/>
+<g id="Frame" clip-path="url(#clip1_234_95)">
+<path id="Path 12279" d="M19.5 9L12 16.5L4.5 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_234_95">
+<rect width="1920" height="948" fill="white" transform="translate(-255 -171)"/>
+</clipPath>
+<clipPath id="clip1_234_95">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
