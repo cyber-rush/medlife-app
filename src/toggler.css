@@ -1,0 +1,85 @@
+/*********************************Toggler************************************************************************/
+
+.toggler {
+  width: 100%;
+  height: 142px;
+  background: #fff;
+  border-right: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+  padding: 0 10px; /* Add padding for better spacing */
+}
+
+.taskPanel {
+  margin-left: 32px;
+}
+
+.taskPanel h3 {
+  margin-top: 12px; /* Adjust margin for smaller screens */
+  font-size: 1.2em; /* Adjust font size for smaller screens */
+  margin-bottom: 2px;
+  color: #000;
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.taskPanel h5 {
+  color: #7e7e7e;
+  font-family: Outfit;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 41px;
+  overflow: hidden;
+}
+
+.links {
+  margin-left: 32px;
+  /* margin-bottom: 10px; */
+}
+
+.links a {
+  margin-right: 4%;
+  color: #7e7e7e;
+  font-family: Outfit;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+}
+
+#linkOnActive {
+  color: #04095a;
+}
+
+.activeLinkImageForUpcoming {
+  margin-left: 2%;
+  width: 11%;
+}
+
+.activeLinkImageForCompleted {
+  margin-left: 13.5%;
+  width: 11%;
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .toggler {
+    height: auto; /* Allow height to adjust based on content */
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: flex-start; /* Align items to the start on smaller screens */
+  }
+
+  .taskPanel h3 {
+    margin-top: 0; /* Remove top margin for smaller screens */
+  }
+
+  .links {
+    text-align: left; /* Align links to the left on smaller screens */
+    margin-top: 10px; /* Add top margin for better spacing */
+  }
+}

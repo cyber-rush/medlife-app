@@ -16,27 +16,23 @@ const AppointmentCard = ({ status, assessmentType, id }) => {
                 <div className='profileData'>
                     <h2>Melanie Laurent</h2>
                     <h4>Appointment Id.:  324424</h4>
-                    <a>{assessmentType}</a>
+                    <a id='assessment'>{assessmentType}</a>
                 </div>
                 <div className='taskData'>
-                    <h5>
-                        Task ID:
-                        <span>
-                            2323232
-                        </span>
-                    </h5>
-                    <h5>
-                        Date & time:
-                        <span>
-                            December 22, 2022  10:30 AM
-                        </span>
-                    </h5>
-                    <h5>
-                        Duration:
-                        <span>
-                            1 hour
-                        </span>
-                    </h5>
+                    <table>
+                        <tr>
+                            <th>Task ID:</th>
+                            <td>2323232</td>
+                        </tr>
+                        <tr>
+                            <th>Date & time:</th>
+                            <td>December 22, 2022  10:30 AM</td>
+                        </tr>
+                        <tr>
+                            <th>Duration:</th>
+                            <td>1 hour</td>
+                        </tr>
+                    </table>
                 </div>
                 <div className='statusAndAssessment'>
                     <h5>Status
@@ -51,7 +47,7 @@ const AppointmentCard = ({ status, assessmentType, id }) => {
                 </div>
 
             </div>
-        </div>
+        </div >
     )
 }
 

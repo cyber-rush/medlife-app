@@ -1,0 +1,97 @@
+/******************************************* Sidebar ***********************************************************************/
+
+.sidebar {
+  width: 295px;
+  height: 867px;
+  border-right: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+  background: #fff;
+}
+
+.sidebarText {
+  margin: 20px 189.92px 19.45px 24px;
+}
+
+.clinicalButton {
+  margin: 20px 189.92px 19.45px 24px;
+  width: 260px;
+  height: 44px;
+  background-color: #04095a;
+  color: #fff;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.clinicalButton img {
+  float: right;
+}
+
+.appointment {
+  margin: 20.55px 189.92px 19.45px 24px;
+  display: flex;
+  width: 252px;
+  height: 50px;
+  background-color: #f8fbff;
+}
+
+.appointment img {
+  width: 24px;
+  height: 24px;
+  margin-top: 12px;
+  margin-right: 16px;
+  margin-left: 8px;
+}
+
+.appointment div {
+  margin-top: 12px;
+  color: #7e7e7e;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.taskButton {
+  margin: 20.55px 189.92px 19.45px 24px;
+  width: 252px;
+  height: 50px;
+  background-color: #f8fbff;
+  border: none;
+  border-right: 3px solid #04095a;
+  text-align: left;
+  color: #04095a;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.taskButton img {
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .clinicalButton {
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+
+  .appointment img,
+  .taskButton img {
+    display: none; /* Hide the images on smaller screens */
+  }
+}

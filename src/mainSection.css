@@ -1,0 +1,323 @@
+/******************************* Main - Section*******************************************************************/
+
+.mainSection {
+  margin-top: 2%;
+  border-radius: 12px;
+  border: 1px solid #e8e8e8;
+  width: 1564px;
+  max-width: 100%;
+  height: 785px;
+  overflow: hidden;
+}
+
+.lower {
+  width: 1212px;
+  height: 814px;
+  background-color: #f4f4f4;
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+}
+
+.higher {
+  width: 1160px;
+  height: 785px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 1;
+  margin-left: 32px;
+  margin-top: 24px;
+  border-radius: 12px 12px 0px 0px;
+  overflow: hidden;
+}
+
+.searchAndFilterButtons {
+  display: flex;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: none;
+  /* z-index: 2;
+      position: absolute;
+      left: 400px;
+      top: 70px; */
+}
+
+.searchBar input {
+  width: 300px;
+  height: 45px;
+  margin-left: 24px;
+  margin-top: 22px;
+  border: 1px solid #cecece;
+  border-radius: 10px;
+}
+
+.searchBar input::placeholder {
+  /* Shift placeholder text 10px to the right and 5px down */
+  text-indent: 30px;
+  padding-top: 5px;
+}
+
+.searchIcon {
+  margin-top: 20px;
+  position: absolute;
+  left: 30px;
+  top: 10px;
+}
+
+.date {
+  display: flex;
+  margin-left: 40px;
+  margin-top: 22px;
+}
+
+.date input {
+  width: 110px;
+  height: 45px;
+  border: 1px solid #cecece;
+  border-radius: 10px;
+}
+
+.date div {
+  margin: 12px;
+  color: #333;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.applyAndResetButtons {
+  margin-top: 22px;
+  margin-left: 40px;
+}
+
+.apply {
+  width: 116px;
+  height: 45px;
+  margin-right: 12px;
+  border-radius: 22px;
+  background-color: #04095a;
+  color: #fff;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.reset {
+  width: 116px;
+  height: 45px;
+  border-radius: 22px;
+  border: 1px solid #377bff;
+  background-color: #fff;
+  color: #377bff;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.filter {
+  margin-top: 22px;
+  margin-left: 100px;
+}
+
+.filter button {
+  width: 100px;
+  height: 45px;
+  border-radius: 12px;
+  border: 1px solid #04095a;
+  background-color: #fff;
+  color: #04095a;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.filterImg {
+  margin-right: 10px;
+}
+/**************************************Card Section**********************************************************/
+
+.items {
+  margin-top: 65px;
+}
+
+.todayItem {
+  margin-left: 22px;
+  color: #000;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.nextDayItem {
+  margin-left: 22px;
+  color: #000;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.id1 {
+  margin: 16px 20px 40px 20px;
+  border: 1px solid #e9ecf1;
+  border-radius: 12px;
+}
+
+.id2 {
+  margin: 16px 20px 40px 20px;
+  border: 1px solid #e9ecf1;
+  border-radius: 12px;
+}
+
+.id3 {
+  margin: 16px 20px 40px 20px;
+  border: 1px solid #e9ecf1;
+  border-radius: 12px;
+}
+
+.profile {
+  display: flex;
+}
+
+.profile button {
+  background-color: #fff;
+  border: none;
+}
+
+.profile img {
+  margin: 25px 0px 25px 28px;
+}
+
+.profileData {
+  margin-left: 30px;
+}
+
+.profileData h2 {
+  color: #000;
+  font-family: Outfit;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.72px;
+  margin-bottom: 0px;
+}
+
+.profileData h4 {
+  color: #7e7e7e;
+  font-family: Outfit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+#assessment {
+  color: rgba(55, 123, 255, 0.9);
+  font-family: Outfit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  /* margin-bottom: 32px; */
+}
+
+.taskData {
+  margin-left: 80px;
+  margin-top: 10px;
+}
+
+th {
+  color: #7e7e7e;
+  font-family: Outfit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  /* margin: 10px 10px 10px 10px; */
+}
+
+.taskData span {
+  float: right;
+  color: #333;
+  font-family: Outfit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
+
+.statusAndAssessment {
+  margin-left: 80px;
+}
+
+.statusAndAssessment h5 {
+  color: #7e7e7e;
+  text-align: right;
+  font-family: Outfit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.overdue {
+  margin-left: 20px;
+  color: #f44336;
+  text-align: right;
+  font-family: Outfit;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 125% */
+}
+
+.upcoming {
+  margin-left: 20px;
+  color: #00b071;
+  text-align: right;
+  font-family: Outfit;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 125% */
+}
+
+.statusAndAssessment button {
+  display: flex;
+  padding: 12px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 6px;
+  background-color: #04095a;
+  color: #fff;
+  text-align: center;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 20px;
+  /* margin-right: 28px; */
+}

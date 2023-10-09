@@ -1,0 +1,51 @@
+.logo {
+  margin-left: 1%;
+  color: #000;
+  font-family: Outfit;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.mainLinks {
+  margin-left: 10.5%;
+  color: #7e7e7e;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.lastLinkSection {
+  margin-left: 2%;
+  overflow: hidden;
+}
+
+.lastLinks {
+  margin-right: 5%;
+  margin-top: 1%;
+  overflow: hidden;
+}
+
+.clockedLink {
+  color: #04095a;
+  font-family: Outfit;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-right: 5%;
+  overflow: hidden;
+  /* margin-top: 1%; */
+}
+
+.clocked {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
