@@ -8,7 +8,7 @@ const Toggler = () => {
     console.log(selectUpcomingTasks, selectCompletedTasks)
 
     return (
-        <div className="toggler">
+        <>
             <div className="taskPanel">
                 <h3>Tasks</h3>
                 <h5>Clinical  Tasks</h5>
@@ -24,7 +24,7 @@ const Toggler = () => {
             }
 
 
-        </div>
+        </>
     )
 }
 

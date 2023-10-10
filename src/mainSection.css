@@ -321,3 +321,300 @@ th {
   margin-bottom: 20px;
   /* margin-right: 28px; */
 }
+
+@media (max-width: 768px) {
+  /* Styles for screens up to 768px wide */
+  /* Adjust your layout for smaller screens */
+
+  /******************************* Main - Section*******************************************************************/
+
+  .mainSection {
+    margin-top: 2%;
+    border-radius: 12px;
+    border: 1px solid #e8e8e8;
+    width: 100%; /* Use relative width */
+    max-width: 100%; /* Set a maximum width if needed */
+    height: auto; /* Use 'auto' for content-based sizing */
+    overflow: hidden;
+  }
+
+  .lower {
+    width: 100%; /* Use relative width */
+    height: auto; /* Use 'auto' for content-based sizing */
+    background-color: #f4f4f4;
+    display: block; /* Use 'block' for full-width layout */
+    position: relative; /* Remove 'absolute' positioning */
+  }
+
+  .higher {
+    width: 100%; /* Use relative width */
+    height: auto; /* Use 'auto' for content-based sizing */
+    background-color: #fff;
+    position: relative; /* Remove 'absolute' positioning */
+    z-index: 1;
+    margin: 0; /* Remove margins */
+    border-radius: 0; /* Remove border-radius */
+    /* overflow: hidden; / / You may not need 'overflow: hidden;' */
+  }
+
+  .searchAndFilterButtons {
+    display: flex;
+  }
+
+  .searchBar {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: none;
+  }
+
+  .searchBar input {
+    width: 80%; /* Adjust width as needed */
+    height: 45px;
+    border: 1px solid #cecece;
+    border-radius: 10px;
+    padding-left: 10px; /* Add padding for better visual alignment */
+  }
+
+  .searchBar input::placeholder {
+    text-indent: 10px; /* Adjust placeholder text alignment */
+    padding-top: 5px;
+  }
+
+  .searchIcon {
+    margin-top: 20px;
+    position: absolute;
+    left: 10px; /* Adjust icon position */
+    top: 10px; /* Adjust icon position */
+  }
+
+  .date {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 22px;
+  }
+
+  .date input {
+    width: 30%; /* Adjust width as needed */
+    height: 45px;
+    border: 1px solid #cecece;
+    border-radius: 10px;
+  }
+
+  .date div {
+    margin: 12px;
+    color: #333;
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .applyAndResetButtons {
+    margin-top: 22px;
+    margin-left: 40px;
+  }
+
+  .apply {
+    width: 30%; /* Adjust width as needed */
+    height: 45px;
+    margin-right: 12px;
+    border-radius: 22px;
+    background-color: #04095a;
+    color: #fff;
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .reset {
+    width: 30%; /* Adjust width as needed */
+    height: 45px;
+    border-radius: 22px;
+    border: 1px solid #377bff;
+    background-color: #fff;
+    color: #377bff;
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .filter {
+    margin-top: 22px;
+    margin-left: 40px;
+  }
+
+  .filter button {
+    width: 30%; /* Adjust width as needed */
+    height: 45px;
+    border-radius: 12px;
+    border: 1px solid #04095a;
+    background-color: #fff;
+    color: #04095a;
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .filterImg {
+    margin-right: 10px;
+  }
+  /*************************************Card Section*********************************************************/
+
+  .items {
+    margin-top: 5%; /* Use percentage margin */
+  }
+
+  .todayItem {
+    margin-left: 5%; /* Use percentage margin */
+    color: #000;
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .nextDayItem {
+    margin-left: 5%; /* Use percentage margin */
+    color: #000;
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .id1,
+  .id2,
+  .id3 {
+    margin: 5% 5% 10% 5%; /* Use percentage margins */
+    border: 1px solid #e9ecf1;
+    border-radius: 12px;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center; /* Center elements horizontally */
+    text-align: center; /* Center text horizontally */
+  }
+
+  .profile button {
+    background-color: #fff;
+    border: none;
+  }
+
+  .profile img {
+    margin: 5% 0; /* Use percentage margins */
+  }
+
+  .profileData {
+    margin-top: 5%; /* Use percentage margin */
+    text-align: center; /* Center text horizontally */
+  }
+
+  .profileData h2 {
+    color: #000;
+    font-family: Outfit;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.72px;
+    margin-bottom: 0px;
+  }
+
+  .profileData h4 {
+    color: #7e7e7e;
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.6px;
+    margin-top: 8px;
+    margin-bottom: 5%; /* Use percentage margin */
+  }
+
+  #assessment {
+    color: rgba(55, 123, 255, 0.9);
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    /* margin-bottom: 32px; */
+  }
+
+  .taskData {
+    margin-left: 10%; /* Use percentage margin */
+    margin-top: 2%; /* Use percentage margin */
+  }
+
+  th {
+    color: #7e7e7e;
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    /* margin: 10px 10px 10px 10px; */
+  }
+
+  .taskData span {
+    float: right;
+    color: #333;
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainSection {
+    margin-top: 2%;
+    border-radius: 12px;
+    border: 1px solid #e8e8e8;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .searchAndFilterButtons,
+  .date,
+  .applyAndResetButtons,
+  .filter {
+    margin: 22px 10px 0 10px;
+  }
+
+  .searchBar input,
+  .date input,
+  .apply,
+  .reset,
+  .filter button {
+    width: 80%;
+  }
+
+  .searchIcon {
+    left: 10px;
+    top: 10px;
+  }
+
+  .apply,
+  .reset,
+  .filter button {
+    margin-right: 12px;
+  }
+}

@@ -1,6 +1,32 @@
-/*******************************************Second Layer****************************************************************/
+#root {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 2fr 50fr; /* Define 2 rows */
+}
 
-.secLayer {
-  margin-top: 4%;
-  display: flex;
+.navbar {
+  width: 100%;
+  grid-column: span 2;
+  /* background-color: red; */
+  /* border: 1px solid black; */
+}
+
+.sidebar {
+  grid-row: span 2;
+  background-color: white;
+  /* border: 1px solid black; */
+  /* display: grid; */
+  overflow: hidden;
+}
+
+.toggler {
+  background-color: white;
+  border: 1px solid black;
+  /* margin-top: 0%; */
+}
+
+.mainSection {
+  background-color: white;
+  border: 1px solid black;
 }

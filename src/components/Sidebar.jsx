@@ -3,22 +3,22 @@ import tasksIcon from '../lib/tasks.svg'
 import dropdownIcon from '../lib/dropdown.svg'
 const Sidebar = () => {
     return (
-        <div className='sidebar'>
+        <>
             <h2 className='sidebarText'>Medlife</h2>
             <button className='clinicalButton'>
-                Add Clinical
-                <img src={dropdownIcon} />
+                <span className="buttonText">Add Clinical</span>
+                <img src={dropdownIcon} className='dropdownIcon' alt='dropdown Icon' />
             </button>
-            <div className='appointment'>
-                <img src={appointmentIcon} />
-                <div >Appointments</div>
-            </div>
+            <button className='appointment'>
+                <img src={appointmentIcon} className='appointmentIcon' alt='appintment Icon' />
+                <span className='appointmentText'>Appointments</span>
+            </button>
             <button className='taskButton'>
-                <img src={tasksIcon} />
-                Tasks
+                <img src={tasksIcon} className='tasksIcon' alt='tasks Icon' />
+                <span className='taskText'>Tasks</span>
             </button>
 
-        </div>
+        </>
     )
 }
 
