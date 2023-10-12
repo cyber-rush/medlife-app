@@ -1,32 +1,41 @@
 #root {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 2fr 50fr; /* Define 2 rows */
+  grid-template-columns: minmax(170px, 1fr) 5fr;
+  grid-template-rows: auto 180px auto;
 }
 
 .navbar {
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
   width: 100%;
   grid-column: span 2;
-  /* background-color: red; */
-  /* border: 1px solid black; */
 }
 
 .sidebar {
   grid-row: span 2;
   background-color: white;
-  /* border: 1px solid black; */
-  /* display: grid; */
   overflow: hidden;
 }
 
 .toggler {
   background-color: white;
-  border: 1px solid black;
-  /* margin-top: 0%; */
+  border: 1px solid #e8e8e8;
+  border-top: none;
+  margin-bottom: auto;
+  padding-bottom: 0%;
 }
 
 .mainSection {
-  background-color: white;
-  border: 1px solid black;
+  background-color: #f4f4f4;
+  padding: 2% 2% 0% 2%;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 }

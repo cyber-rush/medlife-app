@@ -1,7 +1,7 @@
 /******************************************* Sidebar ***********************************************************************/
 
 .sidebarText {
-  margin: 4% 0% 10% 10%;
+  margin: 10% 0% 10% 10%;
   float: left;
 }
 
@@ -76,7 +76,7 @@
 }
 
 /* Media Query for Smaller Screens */
-@media screen and (max-width: 936px) {
+@media screen and (max-width: 786px) {
   /* MAking the button text fade away and displaying only the icon positioning it to the center */
   .buttonText,
   .appointmentText,

@@ -1,20 +1,10 @@
-/*********************************Toggler************************************************************************/
-
-/* .toggler {
-  width: 100%;
-  height: 142px;
-  background: #fff;
-  border-right: 1px solid #e8e8e8;
-  border-top: 1px solid #e8e8e8;
-  padding: 0 10px; /* Add padding for better spacing */
-/* } */
-*/ .taskPanel {
-  margin-left: 32px;
+.taskPanel {
+  margin-left: 5%;
 }
 
 .taskPanel h3 {
-  margin-top: 12px; /* Adjust margin for smaller screens */
-  font-size: 1.2em; /* Adjust font size for smaller screens */
+  margin-top: 2.7%;
+  font-size: 1.2em;
   margin-bottom: 2px;
   color: #000;
   font-family: Outfit;
@@ -36,12 +26,16 @@
 }
 
 .links {
-  margin-left: 32px;
+  width: 25%;
+  margin-left: 3.5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
   /* margin-bottom: 10px; */
 }
 
-.links a {
-  margin-right: 4%;
+.links div {
   color: #7e7e7e;
   font-family: Outfit;
   font-size: 1em;
@@ -49,6 +43,8 @@
   font-weight: 500;
   line-height: normal;
   cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
 }
 
 #linkOnActive {
@@ -56,29 +52,20 @@
 }
 
 .activeLinkImageForUpcoming {
-  margin-left: 2%;
-  width: 11%;
+  padding-left: 5%;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
 .activeLinkImageForCompleted {
-  margin-left: 13.5%;
-  width: 11%;
+  padding-left: 5%;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 /* Media Query for Smaller Screens */
 @media screen and (max-width: 768px) {
-  .toggler {
-    height: auto; /* Allow height to adjust based on content */
-    flex-direction: column; /* Stack elements vertically on smaller screens */
-    align-items: flex-start; /* Align items to the start on smaller screens */
-  }
-
-  .taskPanel h3 {
-    margin-top: 0; /* Remove top margin for smaller screens */
-  }
-
-  .links {
-    text-align: left; /* Align links to the left on smaller screens */
-    margin-top: 10px; /* Add top margin for better spacing */
+  .links div {
+    white-space: wrap;
   }
 }

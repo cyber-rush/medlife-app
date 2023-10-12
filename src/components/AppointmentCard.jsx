@@ -1,53 +1,50 @@
-import queenIcon from '../lib/queen.png'
-
-const AppointmentCard = ({ status, assessmentType, id }) => {
-
-    let myClass;
-    if (id === '1') myClass = 'id1'
-    if (id === '2') myClass = 'id2'
-    if (id === '3') myClass = 'id3'
-
+import profileIcon from '../lib/queen.svg'
+const AppointmentCard = ({ assessmentType, status, date }) => {
     return (
-        <div className={myClass}>
-            <div className='profile'>
-                <button>
-                    <img src={queenIcon} alt="Profile Image" />
-                </button>
-                <div className='profileData'>
-                    <h2>Melanie Laurent</h2>
-                    <h4>Appointment Id.:  324424</h4>
-                    <a id='assessment'>{assessmentType}</a>
+        <>
+            {date && <div className='cardDate'>{date}</div>}
+            <div className="containerCard">
+                <div className="profile-picture">
+                    <img src={profileIcon} />
                 </div>
-                <div className='taskData'>
-                    <table>
-                        <tr>
-                            <th>Task ID:</th>
-                            <td>2323232</td>
-                        </tr>
-                        <tr>
-                            <th>Date & time:</th>
-                            <td>December 22, 2022  10:30 AM</td>
-                        </tr>
-                        <tr>
-                            <th>Duration:</th>
-                            <td>1 hour</td>
-                        </tr>
-                    </table>
-                </div>
-                <div className='statusAndAssessment'>
-                    <h5>Status
-                        <span className={status === "Overdue" ? "overdue" : "upcoming"}>
-                            {status}
-                        </span>
-                    </h5>
-                    <button>
-                        {status === "Overdue" ? "Start Assessment" : "Continue Assessment"}
 
+
+                <div className="profile-data">
+                    <h2>Malenie Laurent</h2>
+                    <p className="appointment-id">Appointment Id.: 324424</p>
+                    <p className='assessmentType'>{assessmentType}</p>
+                </div>
+                <table className="appointment-info">
+                    <tr>
+                        <th>Task ID:</th>
+                        <td>2323232</td>
+
+                    </tr>
+                    <tr>
+                        <th>Date & time:</th>
+                        <td>December 22, 2022  10:30 AM</td>
+
+                    </tr>
+                    <tr>
+                        <th>Duration:</th>
+                        <td>1 hour</td>
+
+                    </tr>
+                </table>
+                <div className='status-info'>
+                    <div>
+                        Status
+                        <span className={status === 'upcoming' ? 'upcoming' : 'overdue'}>
+                            {status === 'upcoming' ? 'Upcoming' : 'Overdue'}
+                        </span>
+                    </div>
+                    <button className="start-assessment-button">
+                        Start Assessment
                     </button>
                 </div>
 
             </div>
-        </div >
+        </>
     )
 }
 

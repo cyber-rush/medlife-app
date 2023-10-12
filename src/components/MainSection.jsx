@@ -1,45 +1,27 @@
-import searchIcon from '../lib/searchIcon.svg'
-import filterIcon from '../lib/filter.svg'
-import UpcomingTasks from './UpcomingTasks'
-import Button from './Button'
 import { useTask } from '../context/task.context'
+import Button from './Button'
 import CompletedTasks from './CompletedTasks'
+import Input from './Input'
+import UpcomingTasks from './UpcomingTasks'
 const MainSection = () => {
     const { taskType } = useTask()
     return (
-        <div className="mainSection">
-            <div className="lower">
+        <div className="mainSectionTopLayer">
+            <div className="menu-bar">
+                <Input type="text" className="search-input" placeholder="Search..." />
+                <Input type="date" className="date-input" placeholder="From Date" />
+                <Input type="date" className="date-input" placeholder="To Date" />
+
+                <Button className="apply-button" buttonText="Apply" />
+                <Button className="reset-button" buttonText="Reset" />
+                <Button className="filter-button" buttonText="Filter" />
 
             </div>
-            <div className="higher">
-                <div className='searchAndFilterButtons'>
-                    <div className='searchBar'>
-                        <img src={searchIcon} alt="Search Icon" className="searchIcon" />
-                        <input type="text" placeholder="Search.." name="search" />
-                    </div>
-                    <div className='date'>
-                        <input type='date' />
-                        <div>to</div>
-                        <input type='date' />
-                    </div>
-                    <div className='applyAndResetButtons'>
-                        <Button buttonName="Apply" />
-                        <Button buttonName="Reset" />
-                    </div>
-                    <div className='filter'>
+            {taskType === 'upcoming'
+                ? <UpcomingTasks />
+                : <CompletedTasks />
+            }
 
-                        <button>
-                            <img src={filterIcon} alt="Filter" className='filterImg' />
-                            Filter
-                        </button>
-                    </div>
-                </div>
-
-                <div className='items'>
-                    {taskType === 'upcoming' ? <UpcomingTasks /> : <CompletedTasks />}
-
-                </div>
-            </div>
         </div>
     )
 }

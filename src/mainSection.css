@@ -1,159 +1,87 @@
-/******************************* Main - Section*******************************************************************/
-
-.mainSection {
-  margin-top: 2%;
-  border-radius: 12px;
-  border: 1px solid #e8e8e8;
-  width: 1564px;
-  max-width: 100%;
-  height: 785px;
-  overflow: hidden;
-}
-
-.lower {
-  width: 1212px;
-  height: 814px;
-  background-color: #f4f4f4;
-  display: flex;
-  position: absolute;
-  overflow: hidden;
-}
-
-.higher {
-  width: 1160px;
-  height: 785px;
+.mainSectionTopLayer {
+  width: 100%;
   background-color: #fff;
-  position: absolute;
-  z-index: 1;
-  margin-left: 32px;
-  margin-top: 24px;
-  border-radius: 12px 12px 0px 0px;
-  overflow: hidden;
+  /* border: 1px solid #e8e8e8; */
+  border-radius: 12px;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
-
-.searchAndFilterButtons {
+.menu-bar {
   display: flex;
-}
-
-.searchBar {
-  display: flex;
+  justify-content: flex-start;
   align-items: center;
-  background-color: #ffffff;
-  border: none;
-  /* z-index: 2;
-      position: absolute;
-      left: 400px;
-      top: 70px; */
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
 }
 
-.searchBar input {
-  width: 300px;
-  height: 45px;
-  margin-left: 24px;
-  margin-top: 22px;
-  border: 1px solid #cecece;
+.search-input {
+  width: 220px;
+  height: 40px;
+  margin-right: 20px; /* Increased margin */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.date-input {
+  width: 120px;
+  height: 40px;
+  margin-right: 20px; /* Increased margin */
+  border: 1px solid #ccc;
   border-radius: 10px;
+  padding: 5px;
+  font-size: 14px;
 }
 
-.searchBar input::placeholder {
-  /* Shift placeholder text 10px to the right and 5px down */
-  text-indent: 30px;
-  padding-top: 5px;
-}
-
-.searchIcon {
-  margin-top: 20px;
-  position: absolute;
-  left: 30px;
-  top: 10px;
-}
-
-.date {
-  display: flex;
-  margin-left: 40px;
-  margin-top: 22px;
-}
-
-.date input {
-  width: 110px;
-  height: 45px;
-  border: 1px solid #cecece;
-  border-radius: 10px;
-}
-
-.date div {
-  margin: 12px;
-  color: #333;
-  font-family: Outfit;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.applyAndResetButtons {
-  margin-top: 22px;
-  margin-left: 40px;
-}
-
-.apply {
-  width: 116px;
-  height: 45px;
-  margin-right: 12px;
-  border-radius: 22px;
+.apply-button,
+.reset-button {
   background-color: #04095a;
-  color: #fff;
-  font-family: Outfit;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.reset {
-  width: 116px;
-  height: 45px;
+  color: white;
+  border: none;
   border-radius: 22px;
-  border: 1px solid #377bff;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 20px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.reset-button {
   background-color: #fff;
+  border: 1px solid #377bff;
   color: #377bff;
-  font-family: Outfit;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
 }
 
-.filter {
-  margin-top: 22px;
-  margin-left: 100px;
+.apply-button:hover,
+.reset-button:hover {
+  background-color: #45a049;
 }
 
-.filter button {
-  width: 100px;
-  height: 45px;
-  border-radius: 12px;
-  border: 1px solid #04095a;
+.filter-button {
   background-color: #fff;
   color: #04095a;
   font-family: Outfit;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
+  /* font-size: 16px; */
+  /* font-style: normal;
+  font-weight: 400; */
   line-height: normal;
+  border: 1px solid #04095a;
+  border-radius: 12px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: auto;
+  /* font-size: 14px; */
+  transition: background-color 0.3s ease;
 }
 
-.filterImg {
-  margin-right: 10px;
-}
-/**************************************Card Section**********************************************************/
-
-.items {
-  margin-top: 65px;
+.filter-button:hover {
+  background-color: #45a049;
 }
 
-.todayItem {
-  margin-left: 22px;
+.cardDate {
+  margin: 2.5% 2.5%;
   color: #000;
   font-family: Outfit;
   font-size: 16px;
@@ -162,52 +90,24 @@
   line-height: normal;
 }
 
-.nextDayItem {
-  margin-left: 22px;
-  color: #000;
-  font-family: Outfit;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.id1 {
-  margin: 16px 20px 40px 20px;
+.containerCard {
+  border-radius: 8px;
   border: 1px solid #e9ecf1;
-  border-radius: 12px;
-}
-
-.id2 {
-  margin: 16px 20px 40px 20px;
-  border: 1px solid #e9ecf1;
-  border-radius: 12px;
-}
-
-.id3 {
-  margin: 16px 20px 40px 20px;
-  border: 1px solid #e9ecf1;
-  border-radius: 12px;
-}
-
-.profile {
+  margin: 1% 2% 2% 2%;
   display: flex;
 }
 
-.profile button {
-  background-color: #fff;
-  border: none;
+.profile-picture {
+  align-self: center;
+  margin-left: 2%;
+}
+.profile-data {
+  flex-basis: 400px;
+  padding: 3%;
+  margin: 5px;
 }
 
-.profile img {
-  margin: 25px 0px 25px 28px;
-}
-
-.profileData {
-  margin-left: 30px;
-}
-
-.profileData h2 {
+.profile-data h2 {
   color: #000;
   font-family: Outfit;
   font-size: 24px;
@@ -215,10 +115,16 @@
   font-weight: 600;
   line-height: normal;
   letter-spacing: -0.72px;
-  margin-bottom: 0px;
 }
 
-.profileData h4 {
+.appointment-info {
+  flex-basis: 300px;
+  margin: 2% 0%;
+  width: 100%;
+  height: 30%;
+}
+
+.appointment-id {
   color: #7e7e7e;
   font-family: Outfit;
   font-size: 20px;
@@ -226,27 +132,11 @@
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.6px;
-  margin-top: 8px;
-  margin-bottom: 20px;
 }
 
-#assessment {
-  color: rgba(55, 123, 255, 0.9);
-  font-family: Outfit;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: -0.4px;
-  /* margin-bottom: 32px; */
-}
-
-.taskData {
-  margin-left: 80px;
-  margin-top: 10px;
-}
-
-th {
+.appointment-info th {
+  padding: 10px; /* You can adjust the padding to control the spacing */
+  text-align: left;
   color: #7e7e7e;
   font-family: Outfit;
   font-size: 20px;
@@ -254,11 +144,11 @@ th {
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.4px;
-  /* margin: 10px 10px 10px 10px; */
 }
 
-.taskData span {
-  float: right;
+.appointment-info td {
+  padding: 10px; /* You can adjust the padding to control the spacing */
+  text-align: left;
   color: #333;
   font-family: Outfit;
   font-size: 20px;
@@ -267,12 +157,16 @@ th {
   line-height: normal;
   letter-spacing: -0.4px;
 }
-
-.statusAndAssessment {
-  margin-left: 80px;
+.status-info {
+  flex-basis: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1% 2% 1% auto;
 }
 
-.statusAndAssessment h5 {
+.status-info div {
   color: #7e7e7e;
   text-align: right;
   font-family: Outfit;
@@ -282,19 +176,7 @@ th {
   line-height: normal;
 }
 
-.overdue {
-  margin-left: 20px;
-  color: #f44336;
-  text-align: right;
-  font-family: Outfit;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 30px; /* 125% */
-}
-
 .upcoming {
-  margin-left: 20px;
   color: #00b071;
   text-align: right;
   font-family: Outfit;
@@ -302,15 +184,35 @@ th {
   font-style: normal;
   font-weight: 500;
   line-height: 30px; /* 125% */
+  margin-left: 5%;
 }
 
-.statusAndAssessment button {
-  display: flex;
-  padding: 12px 32px;
-  align-items: flex-start;
-  gap: 10px;
+.overdue {
+  color: #f44336;
+  text-align: right;
+  font-family: Outfit;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 125% */
+  margin-left: 5%;
+}
+
+.assessmentType {
+  color: rgba(55, 123, 255, 0.9);
+  font-family: Outfit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
+
+.status-info button {
+  height: 20%;
+  align-self: normal;
   border-radius: 6px;
-  background-color: #04095a;
+  background: #04095a;
   color: #fff;
   text-align: center;
   font-family: Outfit;
@@ -318,303 +220,70 @@ th {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-bottom: 20px;
-  /* margin-right: 28px; */
 }
 
+/* Responsive styles */
 @media (max-width: 768px) {
-  /* Styles for screens up to 768px wide */
-  /* Adjust your layout for smaller screens */
-
-  /******************************* Main - Section*******************************************************************/
-
-  .mainSection {
-    margin-top: 2%;
-    border-radius: 12px;
-    border: 1px solid #e8e8e8;
-    width: 100%; /* Use relative width */
-    max-width: 100%; /* Set a maximum width if needed */
-    height: auto; /* Use 'auto' for content-based sizing */
-    overflow: hidden;
+  .menu-bar {
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
-  .lower {
-    width: 100%; /* Use relative width */
-    height: auto; /* Use 'auto' for content-based sizing */
-    background-color: #f4f4f4;
-    display: block; /* Use 'block' for full-width layout */
-    position: relative; /* Remove 'absolute' positioning */
+  .search-input {
+    width: calc(50% - 20px); /* Adjusted width with increased margin */
+    margin-bottom: 10px;
   }
 
-  .higher {
-    width: 100%; /* Use relative width */
-    height: auto; /* Use 'auto' for content-based sizing */
-    background-color: #fff;
-    position: relative; /* Remove 'absolute' positioning */
-    z-index: 1;
-    margin: 0; /* Remove margins */
-    border-radius: 0; /* Remove border-radius */
-    /* overflow: hidden; / / You may not need 'overflow: hidden;' */
+  .date-input {
+    width: calc(33.33% - 20px); /* Adjusted width with increased margin */
+    margin-bottom: 10px;
   }
 
-  .searchAndFilterButtons {
-    display: flex;
-  }
-
-  .searchBar {
-    display: flex;
-    align-items: center;
-    background-color: #ffffff;
-    border: none;
-  }
-
-  .searchBar input {
-    width: 80%; /* Adjust width as needed */
-    height: 45px;
-    border: 1px solid #cecece;
-    border-radius: 10px;
-    padding-left: 10px; /* Add padding for better visual alignment */
-  }
-
-  .searchBar input::placeholder {
-    text-indent: 10px; /* Adjust placeholder text alignment */
-    padding-top: 5px;
-  }
-
-  .searchIcon {
-    margin-top: 20px;
-    position: absolute;
-    left: 10px; /* Adjust icon position */
-    top: 10px; /* Adjust icon position */
-  }
-
-  .date {
-    display: flex;
-    margin-left: 40px;
-    margin-top: 22px;
-  }
-
-  .date input {
-    width: 30%; /* Adjust width as needed */
-    height: 45px;
-    border: 1px solid #cecece;
-    border-radius: 10px;
-  }
-
-  .date div {
-    margin: 12px;
-    color: #333;
-    font-family: Outfit;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-
-  .applyAndResetButtons {
-    margin-top: 22px;
-    margin-left: 40px;
-  }
-
-  .apply {
-    width: 30%; /* Adjust width as needed */
-    height: 45px;
-    margin-right: 12px;
-    border-radius: 22px;
-    background-color: #04095a;
-    color: #fff;
-    font-family: Outfit;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-
-  .reset {
-    width: 30%; /* Adjust width as needed */
-    height: 45px;
-    border-radius: 22px;
-    border: 1px solid #377bff;
-    background-color: #fff;
-    color: #377bff;
-    font-family: Outfit;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-
-  .filter {
-    margin-top: 22px;
-    margin-left: 40px;
-  }
-
-  .filter button {
-    width: 30%; /* Adjust width as needed */
-    height: 45px;
-    border-radius: 12px;
-    border: 1px solid #04095a;
-    background-color: #fff;
-    color: #04095a;
-    font-family: Outfit;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-
-  .filterImg {
-    margin-right: 10px;
-  }
-  /*************************************Card Section*********************************************************/
-
-  .items {
-    margin-top: 5%; /* Use percentage margin */
-  }
-
-  .todayItem {
-    margin-left: 5%; /* Use percentage margin */
-    color: #000;
-    font-family: Outfit;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-  }
-
-  .nextDayItem {
-    margin-left: 5%; /* Use percentage margin */
-    color: #000;
-    font-family: Outfit;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-  }
-
-  .id1,
-  .id2,
-  .id3 {
-    margin: 5% 5% 10% 5%; /* Use percentage margins */
-    border: 1px solid #e9ecf1;
-    border-radius: 12px;
-  }
-
-  .profile {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically on smaller screens */
-    align-items: center; /* Center elements horizontally */
-    text-align: center; /* Center text horizontally */
-  }
-
-  .profile button {
-    background-color: #fff;
-    border: none;
-  }
-
-  .profile img {
-    margin: 5% 0; /* Use percentage margins */
-  }
-
-  .profileData {
-    margin-top: 5%; /* Use percentage margin */
-    text-align: center; /* Center text horizontally */
-  }
-
-  .profileData h2 {
-    color: #000;
-    font-family: Outfit;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.72px;
-    margin-bottom: 0px;
-  }
-
-  .profileData h4 {
-    color: #7e7e7e;
-    font-family: Outfit;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.6px;
-    margin-top: 8px;
-    margin-bottom: 5%; /* Use percentage margin */
-  }
-
-  #assessment {
-    color: rgba(55, 123, 255, 0.9);
-    font-family: Outfit;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.4px;
-    /* margin-bottom: 32px; */
-  }
-
-  .taskData {
-    margin-left: 10%; /* Use percentage margin */
-    margin-top: 2%; /* Use percentage margin */
-  }
-
-  th {
-    color: #7e7e7e;
-    font-family: Outfit;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.4px;
-    /* margin: 10px 10px 10px 10px; */
-  }
-
-  .taskData span {
-    float: right;
-    color: #333;
-    font-family: Outfit;
-    font-size: 20px;
-    font-style: normal;
+  .apply-button,
+  .reset-button,
+  .filter-button {
+    width: calc(33.33% - 20px); /* Adjusted width with increased margin */
+    margin-bottom: 10px;
   }
 }
-
 @media (max-width: 768px) {
-  .mainSection {
-    margin-top: 2%;
-    border-radius: 12px;
-    border: 1px solid #e8e8e8;
+  .date-input,
+  .apply-button,
+  .reset-button {
     width: 100%;
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
-    position: relative;
+    margin-right: 0;
+    margin-bottom: 20px; /* Increased margin between buttons and inputs */
   }
 
-  .searchAndFilterButtons,
-  .date,
-  .applyAndResetButtons,
-  .filter {
-    margin: 22px 10px 0 10px;
+  .containerCard {
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .searchBar input,
-  .date input,
-  .apply,
-  .reset,
-  .filter button {
-    width: 80%;
+  .profile-picture {
+    align-self: flex-start;
+    margin-top: 2%;
   }
 
-  .searchIcon {
-    left: 10px;
-    top: 10px;
+  .profile-data {
+    flex-basis: auto;
+    padding: 3%;
+    margin: 5px;
   }
 
-  .apply,
-  .reset,
-  .filter button {
-    margin-right: 12px;
+  .appointment-info {
+    flex-basis: auto;
+    padding: 3%;
+    margin: 5px;
+  }
+
+  .status-info {
+    flex-basis: none;
+    padding: 3%;
+    margin: 5px;
+  }
+
+  .status-info button {
+    flex-basis: 30%;
   }
 }

@@ -1,8 +1,8 @@
 
-const Button = ({ buttonName }) => {
+const Button = ({ className, buttonText }) => {
     return (
         <>
-            <button className={buttonName === 'Apply' ? 'apply' : 'reset'}>{buttonName}</button>
+            <button className={className}>{buttonText}</button>
         </>
     )
 }
